@@ -38,8 +38,8 @@ window.onload = function () {
 			model.animator.getLayer("motion").play(model.motions[rand]);
 
 			//クリックモーション
-			//var data = resources['motion1'].data;
-			//model.click_motion = animation.fromMotion3Json(data);
+			var data = resources['motion1'].data;
+			model.click_motion = animation.fromMotion3Json(data);
 
 			//視線追従モーション
 			data.CurveCount = data.TotalPointCount = data.TotalSegmentCount = 0;
@@ -82,7 +82,7 @@ window.onload = function () {
 		var p1 = new Promise(function (resolve, reject) {
 			var loader = new PIXI.loaders.Loader();
 			loader.add('model3', "assets/Tiriri/tiriri_move_ver11.model3.json", xhrType);
-			//loader.add('motion1', "assets/Tiriri/Scene1.motion3.json", xhrType);
+			loader.add('motion1', "assets/Tiriri/Scene1.motion3.json", xhrType);
 			//loader.add('motion2', "assets/Koharu/Koharu_02.motion3.json", xhrType);
 			//loader.add('motion3', "assets/Koharu/Koharu_03.motion3.json", xhrType);
 			//loader.add('motion4', "assets/Koharu/Koharu_04.motion3.json", xhrType);
