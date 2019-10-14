@@ -1,0 +1,1 @@
+# tiriri_AR_TEST_live2d
